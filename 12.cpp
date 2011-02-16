@@ -22,7 +22,15 @@ void display();
 
 void complex::display()
 {
-    cout<<"\n\nThe sum of complex number is "<<real<<"+i"<<imag<<endl;
+     if (imag>=0)
+    {
+     cout<<"\n\nThe sum of the complex numbers is: "<<real<<"+"<<imag<<"i"<<endl;
+    }
+    else 
+    {
+     cout<<"\n\nThe sum of the complex numbers is: "<<real<<imag<<"i";
+    }
+    
 }
 complex sum(complex a,complex b)
 
