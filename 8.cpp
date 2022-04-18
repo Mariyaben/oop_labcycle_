@@ -28,7 +28,14 @@ class complex_no
     }
     void display()
     {
-        cout<<real<<"+"<<imag<<"i";
+            if (imag>=0)
+    {
+     cout<<real<<"+"<<imag<<"i";
+    }
+    else 
+    {
+     cout<<real<<imag<<"i";
+    }
     }
 };
  
@@ -40,23 +47,23 @@ int main()
     cin>>real;
     complex_no c1(real);
  
-    cout<<"\n First complex number is given by- ";
+    cout<<"\n First complex number is given by :  ";
     c1.display();
  
     cout<<"\n\n Enter different values for real and imaginary parts of the second complex number : ";
     cin>>real>>imag;
     complex_no c2(real,imag);
  
-    cout<<"\n Second complex number is given by - ";
+    cout<<"\n Second complex number is given by :  ";
     c2.display();
  
     complex_no c3;
-    cout<<"\n\n Initially third complex number is - ";
+    cout<<"\n\n Initially third complex number is :  ";
     c3.display();
  
     c3.add(c1,c2);
  
-    cout<<"\n\n Third complex number is given by - ";
+    cout<<"\n\n Third complex number is given by :  ";
     c3.display();
  
     cout<<"\n";
@@ -65,5 +72,3 @@ int main()
  
     return 0;
 }
-
-
