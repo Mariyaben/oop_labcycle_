@@ -12,7 +12,7 @@ class student
         int total_marks;
         char grade;
         float avg;
-        char status;
+        string status;
 
 public:
         void input();
@@ -56,21 +56,21 @@ void student::calcGrade()
         if (avg>=90)
 
                {grade = 'A';
-                status='PASS';
+                status="PASS";
                }
         else if (avg<90 && avg>=70)
 
                {grade = 'B';
-                status='PASS';
+                status="PASS";
                }
         else if(avg<70 && avg>=50)
  
                {grade = 'C';
-               status='PASS';
+               status="PASS";
                }
         else 
              {grade='F';
-             status='FAIL';   
+             status="FAIL";   
               }
 }
 
@@ -87,7 +87,7 @@ cout<<"\n\n_____________________________________________________________________
 
         calcGrade();
 cout<<"\n\n___________________________________________________________________________";
-        cout << "Total marks of student out of 300:" << total_marks << endl;
+        cout << "\nTotal marks of student out of 300:" << total_marks << endl;
         cout<<"Average marks of student:"<<avg<<endl;
         cout << "Grade of student:" << grade << endl;
         cout<<"Status:"<<status<<endl;  
