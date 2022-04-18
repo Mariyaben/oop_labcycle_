@@ -56,21 +56,21 @@ void student::calcGrade()
         if (avg>=90)
 
                {grade = 'A';
-                status='P';
+                status='PASS';
                }
         else if (avg<90 && avg>=70)
 
                {grade = 'B';
-                status='P';
+                status='PASS';
                }
         else if(avg<70 && avg>=50)
  
                {grade = 'C';
-               status='P';
+               status='PASS';
                }
         else 
-             {grade='D';
-             status='F';   
+             {grade='F';
+             status='FAIL';   
               }
 }
 
